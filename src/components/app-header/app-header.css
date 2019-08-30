@@ -1,0 +1,17 @@
+.navbar-brand .logo {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 0.25px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-brand:hover a {
+    text-decoration: none;
+}
+
+.navbar-brand:hover a .logo {
+    opacity: 0.7;
+}

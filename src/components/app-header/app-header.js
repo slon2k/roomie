@@ -1,13 +1,20 @@
 import React from 'react';
-import {Breadcrumb, BreadcrumbItem, Navbar, NavbarItem, Icon, onClickNav, NavbarBurger, NavbarBrand, brand, NavbarMenu, NavbarStart, NavbarLink, NavbarDivider, NavbarDropdown, NavbarEnd, Field, Control, Button} from "bloomer"
+import {Container, Breadcrumb, BreadcrumbItem, Navbar, NavbarItem, Icon, onClickNav, NavbarBurger, NavbarBrand, brand, NavbarMenu, NavbarStart, NavbarLink, NavbarDivider, NavbarDropdown, NavbarEnd, Field, Control, Button} from "bloomer"
+import "./app-header.css"
+import {Link} from "react-router-dom";
 
 const AppHeader = () => {
 
     return (
         <Navbar style={{ border: 'solid 1px #00D1B2', margin: '0' }}>
-            <NavbarBrand>
-                Roomie
-            </NavbarBrand>
+            <Container>
+                <NavbarBrand>
+                    <NavbarItem>
+                        <Link to={"/"}><div className={"logo"}>Roomie</div></Link>
+                    </NavbarItem>
+                </NavbarBrand>
+            </Container>
+
             <NavbarMenu>
                 <NavbarStart>
                     <NavbarItem href='../'>Главная</NavbarItem>
